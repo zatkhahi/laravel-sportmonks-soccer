@@ -21,7 +21,7 @@ class SoccerAPIClient {
     {
         $options = [
             'base_uri'  => 'https://soccer.sportmonks.com/api/v2.0/',
-            'verify'    => app('env') === 'testing' ? false : true,
+            'verify'    => false,
         ];
         $this->client = new Client($options);
 
